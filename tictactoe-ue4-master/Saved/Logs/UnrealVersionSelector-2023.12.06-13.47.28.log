@@ -1,0 +1,38 @@
+AndroidPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.AndroidPlatformSDK has no valid SDK
+LinuxPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.LinuxPlatformSDK has no valid SDK
+WindowsPlatformFactory.RegisterBuildPlatforms: UnrealBuildTool.WindowsPlatformSDK using manually installed SDK
+ProjectFileGenerator.GenerateProjectFiles: Discovering modules, targets and source code for project...
+UnrealBuildTool.Main: ERROR: Error while enumerating Visual Studio toolchains
+UnrealBuildTool.Main: COMException: {177F0C4A-1CD3-4DE7-A32C-71DBBB9FA36D} CLSID değerine bileşen için COM sınıfı fabrikasını alma, yandaki hata nedeniyle başarısız oldu: 80040154 Sınıf kaydedilmemiş (HRESULT özel durum döndürdü: 0x80040154 (REGDB_E_CLASSNOTREG)).
+UnrealBuildTool.Main:    konum: System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+UnrealBuildTool.Main:    konum: System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+UnrealBuildTool.Main:    konum: System.Activator.CreateInstance(Type type, Boolean nonPublic)
+UnrealBuildTool.Main:    konum: System.Activator.CreateInstance(Type type)
+UnrealBuildTool.Main:    konum: UnrealBuildTool.WindowsPlatform.FindVisualStudioInstallations() D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Platform\Windows\UEBuildWindows.cs içinde: satır 1060Wrapped by BuildException: Error while enumerating Visual Studio toolchains
+UnrealBuildTool.Main:    konum: UnrealBuildTool.WindowsPlatform.FindVisualStudioInstallations() D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Platform\Windows\UEBuildWindows.cs içinde: satır 1122
+UnrealBuildTool.Main:    konum: System.Lazy`1.CreateValue()
+UnrealBuildTool.Main:    konum: System.Lazy`1.LazyInitValue()
+UnrealBuildTool.Main:    konum: UnrealBuildTool.VCProjectFileGenerator.SetupSupportedPlatformsAndConfigurations(Boolean IncludeAllPlatforms, String& SupportedPlatformNames) D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\VisualStudio\VCProjectFileGenerator.cs içinde: satır 337
+UnrealBuildTool.Main:    konum: UnrealBuildTool.ProjectFileGenerator.GenerateProjectFiles(PlatformProjectGeneratorCollection PlatformProjectGenerators, String[] Arguments) D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\ProjectFiles\ProjectFileGenerator.cs içinde: satır 743
+UnrealBuildTool.Main:    konum: UnrealBuildTool.GenerateProjectFilesMode.Execute(CommandLineArguments Arguments) D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Modes\GenerateProjectFilesMode.cs içinde: satır 208
+UnrealBuildTool.Main:    konum: UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs içinde: satır 557
+Timeline.Print: Timeline:
+Timeline.Print: 
+Timeline.Print: [ 0.000]
+Timeline.Print: [ 0.000](+0.048) <unknown>
+Timeline.Print: [ 0.048](+0.121) XmlConfig.ReadConfigFiles()
+Timeline.Print: [ 0.170](+0.000) SingleInstanceMutex.Acquire()
+Timeline.Print: [ 0.170](+0.113) UEBuildPlatform.RegisterPlatforms()
+Timeline.Print:   0.171          [ 0.000](+0.054) Initializing InstalledPlatformInfo
+Timeline.Print:   0.225          [ 0.055](+0.000) Querying types
+Timeline.Print:   0.228          [ 0.057](+0.002) MacPlatformFactory
+Timeline.Print:   0.230          [ 0.059](+0.000) TVOSPlatformFactory
+Timeline.Print:   0.230          [ 0.060](+0.040) AndroidPlatformFactory
+Timeline.Print:   0.271          [ 0.100](+0.000) HoloLensPlatformFactory
+Timeline.Print:   0.271          [ 0.101](+0.000) IOSPlatformFactory
+Timeline.Print:   0.272          [ 0.101](+0.010) LinuxPlatformFactory
+Timeline.Print:   0.282          [ 0.111](+0.000) LuminPlatformFactory
+Timeline.Print:   0.282          [ 0.111](+0.001) WindowsPlatformFactory
+Timeline.Print: [ 0.284](+0.279) <unknown>
+Timeline.Print: [ 0.564](+0.003) FileMetadataPrefetch.Stop()
+Timeline.Print: [ 0.571]
